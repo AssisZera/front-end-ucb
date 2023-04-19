@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela</title>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+
+    <section id="cabeçalho" style="text-align: center">
+      <h1>Minha Tabela</h1>
+      <header>
+        <nav>
+          <a href="#tabela">Tabela</a> &nbsp;&nbsp;
+          <a href="#rodape">Rodapé</a>
+        </nav>
+      </header>
+    </section>
+
+    <!--Tabela-->
+
+    <section id="tabela" style="margin-top: 10%">
+      <table border="1" align="center">
+        <caption>
+          Tabela na Aula de Front-End
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="4">Exemplo de Colspan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="4">Exemplo de Rowspan</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Data de Nascimento</th>
+          </tr>
+          <tr>
+            <td>Tiago</td>
+            <td>Assis</td>
+            <td>04/12/1998</td>
+          </tr>
+          <tr>
+            <td>Geraldo</td>
+            <td>Carvalho</td>
+            <td>24/12/1965</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Nascidos na década de 90 e 60</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!--Rodapé-->
+
+    <section id="rodape" style="text-align: center; margin-top: 10%">
+      <footer>
+        <hr>
+        <p>Todos os direitos reservados</p>
+      </footer>
+    </section>
+  </body>
+</html>
