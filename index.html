@@ -1,69 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabela</title>
-  </head>
-  <body>
-    <!--Cabeçalho-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudando HTML e CSS</title>
+</head>
+<body>
 
-    <section id="cabeçalho" style="text-align: center">
-      <h1>Minha Tabela</h1>
-      <header>
-        <nav>
-          <a href="#tabela">Tabela</a> &nbsp;&nbsp;
-          <a href="#rodape">Rodapé</a>
-        </nav>
-      </header>
+    <!--Estrutura-->
+
+    <header><!--Cabeçalho: Agrupa os títulos da página-->
+
+    </header>
+    <nav><!--Barra de Navegação: Agrupa o índice, como os links para direcionamento a um determinado item-->
+
+    </nav>
+    <section><!--Seção: Define uma seção de um documento, como por exemplo um subtitulo e um parágrafo-->
+
     </section>
+    <article><!--Artigo: É basicamente uma seção, porém, ele agrupa um conteúdo independente um do outro, faz sentido por si só-->
+
+    </article>
+    <aside><!--Aparte: É um texto paralelo ao principal, um "box" dando detalhes sobre algum assunto-->
+
+    </aside>
+    <footer><!--Rodapé: Agrupa itens finais de rodapé, podendo agrupar um <nav> dentro-->
+
+    </footer>
+
+    <!--Tags-->
+
+    <div>Bloco que ajuda na estilização</div>
+    <p>Parágrafo</p>
+    <hr><!--Cria uma linha entre tags-->
+    <pre>Texto pré-formatado</pre>
+    <a href="#">Um link</a>
+    <img src="" alt="" title="" width="" height="">
+    <blockquote><p>"Texto com uma longa citação"</p></blockquote>
+    <figure><!--Tag <figure>: Serve para marcar uma foto em um documento-->
+        <figcaption>Logotipo</figcaption><!--Legenda ou Título para a foto-->
+        <img src="" alt="" title="" width="" height=""> 
+    </figure>
 
     <!--Tabela-->
 
-    <section id="tabela" style="margin-top: 10%">
-      <table border="1" align="center">
-        <caption>
-          Tabela na Aula de Front-End
-        </caption>
-        <thead>
-          <tr>
-            <th colspan="4">Exemplo de Colspan</th>
-          </tr>
+    <table border="1"><!--Entrada da tabela-->
+        <caption>Título da Tabela</caption><!--Cabeçalho: Título da tabela-->
+        <thead><!--Cabeçalho da Tabela: É a primeira linha da tabela-->
+            <tr><!--Tag <tr>: Serve para dizer quantas linhas terá a tabela-->
+                <th colspan="2">Nome e Sobrenome</th> <!--Tag <th>: Serve para dizer quantas colunas de título, ou seja, fica em negrito, terá a tabela-->
+                <th>Idade</th>
+                <th>Turma</th>
+            </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th rowspan="4">Exemplo de Rowspan</th>
-            <th>Nome</th>
-            <th>Sobrenome</th>
-            <th>Data de Nascimento</th>
-          </tr>
-          <tr>
-            <td>Tiago</td>
-            <td>Assis</td>
-            <td>04/12/1998</td>
-          </tr>
-          <tr>
-            <td>Geraldo</td>
-            <td>Carvalho</td>
-            <td>24/12/1965</td>
-          </tr>
+        <tbody><!--Corpo da Tabela: É o corpo da tabela, todas as linhas menos a primeira e a última-->
+            <tr>
+                <td>Tiago</td> <!--Tag para colunas-->
+                <td>Assis</td>
+                <td>24</td>
+                <td rowspan="3">101</td>
+            </tr>
+            <tr>
+                <td>Gabrielle</td>
+                <td>Marayan</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Geraldo</td>
+                <td>Carvalho</td>
+                <td>57</td>
+            </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="4">Nascidos na década de 90 e 60</td>
-          </tr>
+        <tfoot> <!--Rodapé da Tabela: É a última linha da tabela-->
+            <tr>
+                <td colspan="4">Fim da Tabela</td>
+            </tr>
         </tfoot>
-      </table>
-    </section>
+    </table>
 
-    <!--Rodapé-->
+    <!--Listas-->
 
-    <section id="rodape" style="text-align: center; margin-top: 10%">
-      <footer>
-        <hr>
-        <p>Todos os direitos reservados</p>
-      </footer>
-    </section>
-  </body>
+    <ul> <!--Lista não Ordenada: A ordem dos itens não faz diferença-->
+        <li>Café</li> <!--Demarca os intes da lista-->
+        <li>Cereal</li>
+        <li>Leite</li>
+    </ul>
+
+    <ol><!--Lista Ordenada: A ordem dos itens tem importância-->
+        <li>Primeiro lugar</li>
+        <li>Segundo lugar</li>
+        <li>Terceiro lugar</li>
+    </ol>
+
+    <!--Formulário-->
+    
+    <fieldset><!--Desenha uma caixa ao redor dos elementos-->
+        <legend>Escolha seu carro</legend><!--Dá um título para o formulário-->
+        <form action=""><!--Formulário que vai interagir com o usuário, onde ele coloca suas informações e essas informações são enviadas para um servidor para processamento-->
+            <label for="nome">Nome:</label><!--Define qual informação será digitada na caixa pelo usuário OBS: o atrubuto "for" deve ser igual ao atributo "id" da tag input-->
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><!--Abre uma caixa para o usuário digitar, OBS: o atrubuto "placeholder" da uma instrução do que deve ser digitado na caixa-->
+            
+            <br><!--Desce uma linha-->
+            
+            <label for="carro">Escolha um dos carros:</label>
+            <select name="carro" id="carro" size="1"><!--Abre uma caixa para o usuário escolher uma das opções ou várias. OBS: O atributo "size" define quantas opções ficarão visiveis. O atributo "multiple" faz com que mais de uma opção possa ser escolhida-->
+                <option value="volvo">Volvo</option><!--Define os itens que serão apresentados para escolha do usuário-->
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <br>
+
+            <label for="mensagem">Escreva aqui o porque deseja esse carro:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui..."></textarea><!--Abre uma caixa de texto para o usuário digitar-->
+
+            <br>
+
+            <label for="avaliacao">Qual seu nível de satisfação?</label>
+            <input list="notas" id="avaliacao" name="avaliacao"><!--Abre uma caixa para o usuário digitar opções pré definidas-->
+            <datalist id="notas"><!--Especifica as pré definições para aquela resposta-->
+                <option value="Ótimo"></option>
+                <option value="Bom"></option>
+                <option value="Regular"></option>
+                <option value="Ruim"></option>
+            </datalist>
+
+            <br>
+
+            <button type="button" onclick="alert('Você enviou seu formulário com sucesso')">Envie seu Formulário</button><!--Cria um botão para o usuário enviar seu formulário. OBS: O atributo "onclick" faz com que haja uma interação ao usuário enviar seu formulário-->
+
+            <br>
+
+        </form>
+    </fieldset>
+
+    <!--CSS-->
+
+    <a href="#">CSS</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero, iure, maiores impedit necessitatibus officiis praesentium quisquam similique dolor facilis officia nemo asperiores unde ipsum? Sapiente quibusdam est eius neque?</p>
+</body>
 </html>

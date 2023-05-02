@@ -1,0 +1,30 @@
+/*Comentário*/
+
+* {
+    /*Marcador universal da página*/
+    
+}
+
+a:link {
+    /*links não visitados*/
+    color: blue;
+}
+
+a:visited {
+    /*Liks visitados*/
+    color: red;
+}
+
+a:hover {
+    /*Quando o mouse está em cima do link*/
+    color: green;
+}
+
+a:active {
+    /*Quando o link é clicado*/
+    color: yellow;
+}
+
+div {
+    
+}
